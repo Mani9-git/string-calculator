@@ -1,0 +1,126 @@
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem; */
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff6f61, #de6262);
+  min-height: 100vh;
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background: #f0f0f0;
+  transition: background 0.3s, border 0.3s;
+}
+
+.input-field:focus {
+  background: #e0e0e0;
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.submit-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background: #ff6f61;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:hover {
+  background: #de6262;
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  transform: scale(0.95);
+}
+
+.result-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.result-message, .error-message {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #fff;
+}
